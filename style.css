@@ -57,6 +57,14 @@ body {
     padding: 2%;
 }
 
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: brown;
+}
+
 h1 {
     font-size: 300%;
     font-weight: bold;
@@ -68,7 +76,17 @@ h2 {
 
 }
 h3 {
-    font-size: 120%;
+    font-size: 125%;
+}
+
+.bio {
+    padding-bottom: 50px;
+}
+
+.description {
+    font-size: 110%;
+    padding: 30px;
+    padding-right: 5%;
 }
 
 .pfp img {
@@ -76,4 +94,25 @@ h3 {
     border: 15px solid transparent;
     padding: 10px;
     float: left;
+}
+
+.skills {
+    padding: 30px;
+}
+
+.footer {
+    background-color: rgb(190, 158, 116);
+    padding-left: 15px;
+}
+
+.findme {
+    padding: 1%;
+    font-size: 150%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer img {
+    width: 40px;
+    height: auto;
+    padding: 10px;
 }
