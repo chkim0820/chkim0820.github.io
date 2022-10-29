@@ -1,20 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.header{
-    min-height: 100vh;
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+body {
+    background-image: linear-gradient(to right, #deb887, #fff3b0);
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.nav-list {
+    display: flex;
     width: 100%;
-    background-color: linear-gradient(#D52D00, #A30262), url();
-    opacity: 0.6;
-    position: relative;
+    align-items: center;
+    background-color: #7C4E29;
 }
-nav{
-    displey: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+
+.logo img {
+    width: 130px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 50px 75px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+
+.nav-list li a:hover {
+    color: brown;
+}
+
+.header {
+    padding: 2%;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 180%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+h3 {
+    font-size: 120%;
+}
+
+.pfp img {
+    width: 150px;
+    border: 15px solid transparent;
+    padding: 10px;
+    float: left;
 }
