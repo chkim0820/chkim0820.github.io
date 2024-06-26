@@ -8,6 +8,9 @@ function ContactForm() {
 
   if (state.succeeded) {
     alert("Form submitted successfully!");
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
   }
 
   return (
