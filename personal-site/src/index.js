@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
+import reportWebVitals from './reportWebVitals';
+// Subpages
 import App from './App';
 import About from './components/about.js';
 import Contact from './components/contact.js';
 import Boba from './components/boba.js';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
