@@ -1,6 +1,61 @@
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.jpg';
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm('mpwaanqo');
+
+  if (state.succeeded) {
+    alert("Form submitted successfully!");
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        required
+      />
+      <ValidationError 
+        prefix="Name" 
+        field="name"
+        errors={state.errors}
+      />
+
+      <label htmlFor="email">Email Address</label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        required
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+
+      <label htmlFor="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        required
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+
+      <button type="submit" disabled={state.submitting}>
+        {state.submitting ? 'Submitting...' : 'Submit'}
+      </button>
+    </form>
+  );
+}
 
 function Contact() {
   return (
@@ -26,17 +81,7 @@ function Contact() {
       <main>
         <div className="container">
           <h2>Contact Us</h2>
-          <form action="/submit-form" method="post">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required />
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <div style={{ overflow: 'hidden' }}>
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </main>
       <footer>
