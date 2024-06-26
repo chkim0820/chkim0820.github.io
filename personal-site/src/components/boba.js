@@ -17,7 +17,9 @@ function Boba() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li><a href="Boba-Website/boba.html">Boba Website!</a></li>
+            <li>
+              <Link to="/boba">Boba Website!</Link>
+            </li>
           </ul>
         </nav>
       </header>
