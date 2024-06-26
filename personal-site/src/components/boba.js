@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.jpg';
 
-function Contact() {
+function Boba() {
   return (
     <div>
       <header className="navbar">
@@ -36,4 +36,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Boba;
