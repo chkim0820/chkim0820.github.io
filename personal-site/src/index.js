@@ -5,6 +5,7 @@ import './styles/index.css';
 import App from './App';
 import About from './components/about.js';
 import Contact from './components/contact.js';
+import Boba from './components/boba.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/boba" element={<Boba />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
