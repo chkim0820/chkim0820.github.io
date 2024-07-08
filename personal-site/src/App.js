@@ -1,27 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import linkedinLogo from './assets/linkedin-logo.jpg';
+import linkedinLogo from './assets/linkedin-logo.png';
+import personalLogo from './assets/personal-logo.png';
 import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <nav class="navbar">
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About Me</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/boba">Boba Website!</Link>
-              </li>
-            </ul>
+        <nav className="navbar">
+          <div className="logo">
+            <a href="/">
+              <img src={personalLogo} alt="Logo" />
+            </a>
+          </div>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Me</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/boba">Boba Website!</Link>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>

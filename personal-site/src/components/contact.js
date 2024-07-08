@@ -1,7 +1,9 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom';
-import linkedinLogo from '../assets/linkedin-logo.jpg';
+import linkedinLogo from '../assets/linkedin-logo.png';
+import personalLogo from '../assets/personal-logo.png';
+
 
 function ContactForm() {
   const [state, handleSubmit] = useForm('mpwaanqo');
@@ -63,8 +65,13 @@ function ContactForm() {
 function Contact() {
   return (
     <div className="App">
-      <header className="navbar">
-        <nav class="navbar">
+      <header>
+        <nav className="navbar">
+          <div className="logo">
+            <a href="/">
+              <img src={personalLogo} alt="Logo" />
+            </a>
+          </div>
           <ul>
             <li>
               <Link to="/">Home</Link>
