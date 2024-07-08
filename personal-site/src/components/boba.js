@@ -4,9 +4,9 @@ import linkedinLogo from '../assets/linkedin-logo.jpg';
 
 function Boba() {
   return (
-    <div>
+    <div className="App">
       <header className="navbar">
-        <nav class="navbar">
+        <nav className="navbar">
           <ul>
             <li>
               <Link to="/">Home</Link>

@@ -5,7 +5,7 @@ import linkedinLogo from '../assets/linkedin-logo.jpg';
 function About() {
   return (
     <>
-        <div>
+        <div className="App">
             <header className="navbar">
                 <nav class="navbar">
                     <ul>

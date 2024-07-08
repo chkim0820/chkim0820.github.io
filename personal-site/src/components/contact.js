@@ -62,7 +62,7 @@ function ContactForm() {
 
 function Contact() {
   return (
-    <div>
+    <div className="App">
       <header className="navbar">
         <nav class="navbar">
           <ul>
