@@ -12,6 +12,10 @@ html, body {
   min-height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: Consolas, Menlo, 'Andale Mono', 'Roboto Mono', monospace;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -58,7 +62,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 900px;
+  max-width: 870px;
   margin: 20px auto;
   padding-bottom:60px;
 }
@@ -79,13 +83,13 @@ footer p {
   margin: 0 1px; 
 }
 
-.linkedin-button {
+.link-button {
   display: flex;
   color: white;
   padding: 6px 10px;
 }
 
-.linkedin-button img {
+.link-button img {
   vertical-align: middle;
   width: 30px; 
   height: 30px; 

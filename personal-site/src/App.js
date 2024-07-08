@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from './assets/linkedin-logo.png';
+import githubLogo from './assets/github-logo.png';
 import personalLogo from './assets/personal-logo.png';
 import './styles/App.css';
 
@@ -31,11 +32,10 @@ function App() {
         </nav>
       </header>
       <main>
-        <h1>Welcome!</h1>
-        <h3>I am Chaehyeon Kim, an aspiring computer scientist.</h3> 
-        <p>I created this website to share my journey, experiences, and insights with you. 
-            Here, you'll find a collection of my projects and achievements. Feel free to explore and get to know me better. 
-            If you have any questions or just want to say hello, don't hesitate to reach out. Thank you for visiting!</p>        
+        <h1 style={{ fontSize: '3em' }}>Welcome!</h1>
+        <h3 style={{ fontSize: '1.5em' }}>I am Chaehyeon Kim, an aspiring computer scientist.</h3> 
+        <p style={{ fontSize: '1.1em' }}>I created this website to share my journey and experiences with you. 
+            Here, you'll find a collection of my projects and achievements. Feel free to explore, and if you have any questions or simply want to say hello, please don't hesitate to reach out. Thank you for visiting!</p>        
         <div>
             <iframe src="https://giphy.com/embed/Wj7lNjMNDxSmc" width="350" height="349" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
@@ -43,8 +43,13 @@ function App() {
       <footer>
         <p>© 2024 Chaehyeon Kim</p>
         <a href="https://www.linkedin.com/in/chkim0820/" target="_blank" rel="noopener noreferrer">
-          <div className="linkedin-button">
+          <div className="link-button">
             <img src={linkedinLogo} alt="LinkedIn Icon" />
+          </div>
+        </a>
+        <a href="https://github.com/chkim0820" target="_blank" rel="noopener noreferrer">
+          <div className="link-button">
+            <img src={githubLogo} alt="GitHub Icon" />
           </div>
         </a>
       </footer>
