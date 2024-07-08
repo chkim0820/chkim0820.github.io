@@ -8,25 +8,25 @@ function About() {
   return (
     <>
         <div className="App">
-            <header>
+            <header class="header">
+                <div className="logo">
+                    <a href="/">
+                        <img src={personalLogo} alt="Logo" />
+                    </a>
+                </div>
                 <nav className="navbar">
-                    <div className="logo">
-                        <a href="/">
-                            <img src={personalLogo} alt="Logo" />
-                        </a>
-                    </div>
                     <ul>
                         <li>
-                        <Link to="/">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                        <Link to="/about">About Me</Link>
+                            <Link to="/about">About Me</Link>
                         </li>
                         <li>
-                        <Link to="/contact">Contact</Link>
+                            <Link to="/contact">Contact</Link>
                         </li>
                         <li>
-                        <Link to="/boba">Boba Website!</Link>
+                            <Link to="/boba">Boba Website!</Link>
                         </li>
                     </ul>
                 </nav>

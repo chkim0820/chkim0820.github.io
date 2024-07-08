@@ -7,13 +7,13 @@ import personalLogo from '../assets/personal-logo.png';
 function Boba() {
   return (
     <div className="App">
-      <header>
+      <header class="header">
+        <div className="logo">
+          <a href="/">
+            <img src={personalLogo} alt="Logo" />
+          </a>
+        </div>
         <nav className="navbar">
-          <div className="logo">
-            <a href="/">
-              <img src={personalLogo} alt="Logo" />
-            </a>
-          </div>
           <ul>
             <li>
               <Link to="/">Home</Link>

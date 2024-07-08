@@ -12,8 +12,21 @@ html, body {
   min-height: 100vh;
 }
 
-.navbar {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #FF914D;
+  padding: 5px 100px; /* Adjust padding as needed */
+}
+
+.logo img {
+  vertical-align: middle;
+  width: 100px; 
+  height: 100px; 
+}
+
+.navbar {
   color: #303C6C;
   font-weight: bold;
   display: flex;
@@ -44,8 +57,8 @@ main {
   /* background-color: #B4DFE5; */
   padding: 20px;
   border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
   margin: 20px auto;
   padding-bottom:60px;
 }
@@ -76,12 +89,6 @@ footer p {
   vertical-align: middle;
   width: 30px; 
   height: 30px; 
-}
-
-.logo img {
-  vertical-align: middle;
-  width: 100px; 
-  height: 100px; 
 }
 
 .container {
