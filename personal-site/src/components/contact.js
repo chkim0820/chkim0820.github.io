@@ -91,7 +91,7 @@ function Contact() {
       </header>
       <main>
         <div className="container">
-          <h2>Contact Us</h2>
+          <h2>Contact Me</h2>
           <ContactForm />
         </div>
       </main>
