@@ -62,7 +62,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 870px;
+  max-width: 800px;
   margin: 20px auto;
   padding-bottom:60px;
 }
@@ -125,4 +125,59 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+a:visited {
+  color: #6E260E; /* Same as the default link color */
+}
+
+a {
+  color: #6E260E; /* Same as the default link color */
+  text-decoration: underline; /* Underline style for visited links */
+  font-weight: bold; /* Make the text bold for visited links */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+  color: #FF5733; /* Change color on hover */
+}
+
+.dates {
+  font-weight: bold;
+  color: #555;
+}
+
+.about-me {
+  background-color: ivory;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.about-me h1, .about-me h3, .about-me p {
+  color: #333;
+}
+.about-me p {
+  line-height: 1.6;
+}
+.about-me em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;          
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing-animation {
+  overflow: hidden; /* Ensures text is hidden until animation starts */
+  white-space: nowrap; /* Prevents text from wrapping */
+  animation: typing 3s steps(30, end); /* Adjust duration and steps as needed */
 }
