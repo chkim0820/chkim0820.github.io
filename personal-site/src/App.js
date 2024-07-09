@@ -7,7 +7,7 @@ import './styles/App.css';
 
 function App() {
   return (
-    <router basename="chkim0820.github.io">
+    <router basename="/chkim0820.github.io">
       <div className="App">
         <header class="header">
           <div className="logo">

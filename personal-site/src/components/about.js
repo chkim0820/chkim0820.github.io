@@ -61,7 +61,7 @@ function About() {
                         <ul>
                             <li>Creating a machine learning model to predict student performance and mental workload using clickstream and physiological data.</li>
                             <li>Utilizing TensorFlow and Scikit-Learn for data analysis.</li>
-                            <li>Compiled a comprehensive report with visualized findings.</li>
+                            <li>Compiling a comprehensive report with visualized findings.</li>
                         </ul>
                     </div>
                     <div class="job">
