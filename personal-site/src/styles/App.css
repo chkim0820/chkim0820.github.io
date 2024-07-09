@@ -96,7 +96,7 @@ footer p {
 }
 
 .container {
-  font-family: Arial, sans-serif;
+  font-family: Consolas, Menlo, 'Andale Mono', 'Roboto Mono', monospace;
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
@@ -168,7 +168,10 @@ a:hover {
   text-align: center;
   text-decoration: underline;
   font-weight: bold;          
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.text-highlight {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
 }
 
 @keyframes typing {
@@ -179,5 +182,27 @@ a:hover {
 .typing-animation {
   overflow: hidden; /* Ensures text is hidden until animation starts */
   white-space: nowrap; /* Prevents text from wrapping */
-  animation: typing 3s steps(30, end); /* Adjust duration and steps as needed */
+  animation: typing 2.3s steps(60, end); /* Adjust duration and steps as needed */
+}
+
+/* width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFECCF; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the handle */
+  border-radius: 5px; /* roundness of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the handle on hover */
 }

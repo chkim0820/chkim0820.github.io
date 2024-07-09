@@ -32,8 +32,8 @@ function App() {
         </nav>
       </header>
       <main>
-        <h1 className="typing-animation" style={{ fontSize: '3em' }}>Welcome!</h1>
-        <h3 style={{ fontSize: '1.5em' }}>I am Chaehyeon Kim, an aspiring computer scientist.</h3> 
+        <h1 className='text-highlight' style={{ fontSize: '3em' }}>Welcome!</h1>
+        <h3 className="typing-animation" style={{ fontSize: '1.5em' }}>I am Chaehyeon Kim, an aspiring computer scientist :)</h3> 
         <p style={{ fontSize: '1.1em' }}>I created this website to share my journey and experiences with you. 
             Here, you'll find a collection of my projects and achievements. Feel free to explore, and if you have any questions or simply want to say hello, please don't hesitate to reach out. Thank you for visiting!</p>        
         <div>

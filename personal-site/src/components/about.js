@@ -80,8 +80,8 @@ function About() {
                         <h4>Case Western Reserve University <span class="dates"> | Aug 2022 – Dec 2023</span></h4>
                         <p><em>Junior Developer</em></p>
                         <ul>
-                            <li>Collaborated with a team to maintain and enhance the university's website using front-end development tools.</li>
-                            <li>Designed and delivered training curricula for Engineering faculty and staff in Drupal and website management.</li>
+                            <li>Collaborated with a team to maintain the university's website using front-end development tools.</li>
+                            <li>Designed and delivered training for Engineering faculty and staff in Drupal and website management.</li>
                         </ul>
                     </div>
                 </div>
