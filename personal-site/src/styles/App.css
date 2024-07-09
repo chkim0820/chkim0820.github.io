@@ -56,6 +56,14 @@ h1, h2, h3 {
   padding: 10px 20px;
 }
 
+.navbar a:visited {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #6E260E;
+}
+
 main {
   flex: 1;
   /* background-color: #B4DFE5; */
