@@ -44,12 +44,12 @@ function Projects() {
                 </div>
                 <div class="grid-item project3">
                     <h3 class="project-name">Maritime AIS Predictor</h3>
-                    <p class="description">ML clustering algorithm analysis to predict movement</p>
+                    <p class="description">ML clustering algorithm to predict vessel movement</p>
                     <a href="https://github.com/chkim0820/Intro_to_ML/tree/main/Case_Study_2" class="project-link" target="_blank">Source</a>
                 </div>
                 <div class="grid-item project4">
                     <h3 class="project-name">Artifacts of the Past</h3>
-                    <p class="description">2D platform game to navigate obstacles toward victory</p>
+                    <p class="description">A 2D platformer where you navigate obstacles</p>
                     <a href="https://ecse-csds290.itch.io/artifacts-of-the-past-2023-team-7" class="project-link" target="_blank">Demo</a>
                 </div>
                 {/* <div class="grid-item">

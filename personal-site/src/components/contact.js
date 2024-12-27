@@ -87,7 +87,7 @@ function Contact() {
         </nav>
       </header>
       <main>
-        <h1>Feel free to leave me a message here 💬📧</h1>
+        <h2>Feel free to leave me a message here 💬📧</h2>
         <div className="container">
           <h2>Contact Me</h2>
           <ContactForm />
