@@ -33,8 +33,7 @@ h1, h2, h3 {
 }
 
 .logo {
-  text-decoration: none;
-  text-decoration-line: none
+  text-decoration: none !important;
 }
 
 .navbar {

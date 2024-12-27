@@ -10,9 +10,7 @@ function Resume() {
         <div className="App">
             <header class="header">
                <div>
-                    <a href="/" class="logo">
-                        <text>Chaehyeon Kim </text> 👩🏻‍💻
-                    </a>
+                    <a href="/" class="logo"> Chaehyeon Kim 👩🏻‍💻 </a>  
                 </div>
                 <nav className="navbar">
                     <ul>

@@ -13,10 +13,8 @@ function Projects() {
     <>
         <div className="App">
             <header class="header">
-               <div>
-                    <a href="/" class="logo">
-                        <text>Chaehyeon Kim </text> 👩🏻‍💻
-                    </a>
+                <div>
+                    <a href="/" class="logo"> Chaehyeon Kim 👩🏻‍💻 </a>  
                 </div>
                 <nav className="navbar">
                     <ul>
