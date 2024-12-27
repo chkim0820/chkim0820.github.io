@@ -37,6 +37,7 @@ function Projects() {
             </header>
             <main>
             <h1>Projects</h1>
+            <h4 style={{color: '#7276ba'}}><em>A few of the projects I have been working on over the years.</em></h4>
             <div class="grid-container">
                 <div class="grid-item project1">
                     <h3 class="project-name">chkim0820.github.io</h3>
