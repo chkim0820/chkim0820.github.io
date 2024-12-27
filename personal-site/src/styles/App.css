@@ -61,6 +61,7 @@ h1, h2, h3 {
 
 .navbar a:hover {
   color: #7276ba;
+  text-decoration-line: none; /* no underline for navbar menu */
 }
 
 main {
