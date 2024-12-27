@@ -1,9 +1,10 @@
 html, body {
   line-height: 1.5;
-  background-color: #FFECCF;
-  color: #201E1D;
+  background-color: #201c1c;
+  color: #BFBFBF;
   height: 100%;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .App {
@@ -13,25 +14,24 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: Consolas, Menlo, 'Andale Mono', 'Roboto Mono', monospace;
+  color: #f9f9f9;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FF914D;
   padding: 5px 100px; /* Adjust padding as needed */
+  border-bottom: 1px solid;
+  border-color: #3D3D3D;
 }
 
-.logo img {
-  vertical-align: middle;
-  width: 100px; 
-  height: 100px; 
+.logo {
+  text-decoration: none;
 }
 
 .navbar {
-  color: #303C6C;
+  color: lightgray;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -52,21 +52,19 @@ h1, h2, h3 {
 
 .navbar a {
   text-decoration: none;
-  color: white;
   padding: 10px 20px;
 }
 
 .navbar a:visited {
-  color: white;
+  color: lightgray;
 }
 
 .navbar a:hover {
-  color: #6E260E;
+  color: #7276ba;
 }
 
 main {
   flex: 1;
-  /* background-color: #B4DFE5; */
   padding: 20px;
   border-radius: 8px;
   width: 100%;
@@ -76,8 +74,6 @@ main {
 }
 
 footer {
-  background-color: #AB683E;
-  color: white;
   text-align: center;
   padding: 10px 0;
   display: flex;
@@ -85,6 +81,8 @@ footer {
   align-items: center;
   height: 60px;
   width: 100%;
+  border-top: 1px solid;
+  border-color: #3D3D3D;
 }
 
 footer p {
@@ -104,11 +102,10 @@ footer p {
 }
 
 .container {
-  font-family: Consolas, Menlo, 'Andale Mono', 'Roboto Mono', monospace;
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #D8C3A5;
+  background-color: #3D3D3D;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -123,7 +120,7 @@ textarea {
   box-sizing: border-box;
 }
 input[type="submit"] {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -131,23 +128,23 @@ input[type="submit"] {
   cursor: pointer;
   float: right;
 }
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
+/* input[type="submit"]:hover {
+  background-color: white;
+} */
 
 a:visited {
-  color: #6E260E; /* Same as the default link color */
+  color: lightgray; /* Same as the default link color */
 }
 
 a {
-  color: #6E260E; /* Same as the default link color */
-  text-decoration: underline; /* Underline style for visited links */
-  font-weight: bold; /* Make the text bold for visited links */
+  color: #7276ba;
+  font-weight: bold; /* Make the text bold for links */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 a:hover {
-  color: #FF5733; /* Change color on hover */
+  color: #8a8ee2; /* Change color on hover */
+  text-decoration: underline;
 }
 
 .dates {
@@ -155,8 +152,10 @@ a:hover {
   color: #555;
 }
 
+/* Modify after this with page changes */
+
 .about-me {
-  background-color: ivory;
+  background-color: #3D3D3D;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);

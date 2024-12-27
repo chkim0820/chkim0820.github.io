@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <header class="header">
-        <div className="logo">
-          <a href="/">
-            <img src={personalLogo} alt="Logo" />
+        <div>
+          <a href="/" class="logo">
+            <text>Chaehyeon Kim </text> 👩🏻‍💻
           </a>
         </div>
         <nav className="navbar">
@@ -25,9 +25,9 @@ function App() {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/boba">Boba Website!</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>

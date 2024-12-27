@@ -10,9 +10,9 @@ function About() {
     <>
         <div className="App">
             <header class="header">
-                <div className="logo">
-                    <a href="/">
-                        <img src={personalLogo} alt="Logo" />
+               <div>
+                    <a href="/" class="logo">
+                        <text>Chaehyeon Kim </text> 👩🏻‍💻
                     </a>
                 </div>
                 <nav className="navbar">
@@ -26,9 +26,9 @@ function About() {
                         <li>
                             <Link to="/contact">Contact</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/boba">Boba Website!</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
             </header>
@@ -91,7 +91,7 @@ function About() {
                 <p>I enjoy working on projects that challenge me to think critically and creatively. Some of my projects include:</p>
                 <ul>
                     <li><strong>Boba Website</strong>: Implementing a website for boba tea enthusiasts, featuring information about different flavors, recipes, and a community forum.</li>
-                    <li><strong>2D Platform Adventure Game</strong>: Designed and developed a game where players navigate obstacles and battle a final boss. <a href="https://ecse-csds290.itch.io/artifacts-of-the-past-2023-team-7"><em><b>Check it out!</b></em></a></li>
+                    <li><strong>2D Platform Adventure Game</strong>: Designed and developed a game where players navigate obstacles and battle a final boss. <a href="https://ecse-csds290.itch.io/artifacts-of-the-past-2023-team-7"><b>Check it out!</b></a></li>
                     <li><strong>Language Interpreter</strong>: Developed a Scheme interpreter for a Java/C-ish language with features like variables, functions, control flow, exception handling, and object-oriented concepts.</li>
                     <li><strong>Maritime AIS Predictor</strong>: Conducted clustering analysis on AIS data from maritime vessels, optimizing algorithms to predict vessel movements with up to 90.8% accuracy.</li>
                 </ul>

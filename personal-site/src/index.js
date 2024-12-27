@@ -17,7 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/boba" element={<Boba />} />
+        {/* <Route path="/boba" element={<Boba />} /> */}
       </Routes>
     </HashRouter>
   </React.StrictMode>
