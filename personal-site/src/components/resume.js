@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github-logo.png';
+import resume_file from '../assets/resume.pdf'
 
 function Resume() {
   return (
@@ -31,7 +32,8 @@ function Resume() {
                 </nav>
             </header>
             <main>
-            {/* Insert stuff here */}
+                <em>Updated 12/26/2024</em>
+                <embed src={resume_file} width="100%" height="600px" type="application/pdf"></embed>
             </main>
             <footer>
                 <p>© 2024 Chaehyeon Kim</p>

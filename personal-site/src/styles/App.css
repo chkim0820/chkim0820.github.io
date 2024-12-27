@@ -5,6 +5,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
+  padding-top: 25px;
 }
 
 .App {
@@ -28,7 +29,7 @@ h1, h2, h3 {
   position: fixed; /* Makes the header fixed */
   top: 0; /* Ensures it stays at the top */
   width: 90%; 
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .logo {
