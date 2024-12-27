@@ -1,10 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { React, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import linkedinLogo from './assets/linkedin-logo.png';
 import githubLogo from './assets/github-logo.png';
 import './styles/App.css';
 
 function App() {
+  // Move page to the top
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="App">
       <header class="header">

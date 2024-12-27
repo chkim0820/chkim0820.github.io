@@ -1,6 +1,6 @@
-import React from 'react';
+import { React, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useForm, ValidationError } from '@formspree/react';
-import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github-logo.png';
 
@@ -63,6 +63,12 @@ function ContactForm() {
 }
 
 function Contact() {
+  // Move page to the top
+  const location = useLocation();
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="App">
       <header class="header">
