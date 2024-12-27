@@ -5,9 +5,9 @@ import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 // Subpages
 import App from './App';
-import About from './components/about.js';
+import Resume from './components/resume.js';
 import Contact from './components/contact.js';
-import Boba from './components/boba.js';
+import Projects from './components/projects.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,9 +15,9 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/boba" element={<Boba />} /> */}
       </Routes>
     </HashRouter>
   </React.StrictMode>

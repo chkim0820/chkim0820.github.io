@@ -19,11 +19,16 @@ h1, h2, h3 {
 
 .header {
   display: flex;
+  background-color: #201c1c;
   justify-content: space-between;
   align-items: center;
   padding: 5px 100px; /* Adjust padding as needed */
   border-bottom: 1px solid;
   border-color: #3D3D3D;
+  position: fixed; /* Makes the header fixed */
+  top: 0; /* Ensures it stays at the top */
+  width: 90%; 
+  z-index: 1000; 
 }
 
 .logo {

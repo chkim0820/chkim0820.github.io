@@ -3,7 +3,6 @@ import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github-logo.png';
-import personalLogo from '../assets/personal-logo.png';
 
 
 function ContactForm() {
@@ -78,18 +77,20 @@ function Contact() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About Me</Link>
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            {/* <li>
-              <Link to="/boba">Boba Website!</Link>
-            </li> */}
           </ul>
         </nav>
       </header>
       <main>
+        <br />
+        <h1>Feel free to leave me a message here!</h1>
         <div className="container">
           <h2>Contact Me</h2>
           <ContactForm />
