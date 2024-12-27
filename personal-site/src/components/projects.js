@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import linkedinLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github-logo.png';
-import artifactImage from '../assets/project/artifact.png'
-import interpreterImage from '../assets/project/interpreter.png'
-import maritimeImage from '../assets/project/maritime.png'
-import websiteImage from '../assets/project/website.png'
-
 
 function Projects() {
   return (
