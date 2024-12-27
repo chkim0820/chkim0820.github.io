@@ -23,17 +23,18 @@ h1, h2, h3 {
   background-color: #201c1c;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 100px; /* Adjust padding as needed */
+  padding: 5px 100px;
   border-bottom: 1px solid;
   border-color: #3D3D3D;
-  position: fixed; /* Makes the header fixed */
-  top: 0; /* Ensures it stays at the top */
+  position: fixed; 
+  top: 0; 
   width: 90%; 
   z-index: 1000;
 }
 
 .logo {
   text-decoration: none;
+  text-decoration-line: none
 }
 
 .navbar {
@@ -67,7 +68,7 @@ h1, h2, h3 {
 
 .navbar a:hover {
   color: #7276ba;
-  text-decoration-line: none; /* no underline for navbar menu */
+  text-decoration-line: none;
 }
 
 main {
@@ -140,17 +141,17 @@ input[type="submit"] {
 } */
 
 a:visited {
-  color: lightgray; /* Same as the default link color */
+  color: lightgray; 
 }
 
 a {
   color: #7276ba;
-  font-weight: bold; /* Make the text bold for links */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #8a8ee2; /* Change color on hover */
+  color: #8a8ee2;
   text-decoration: underline;
 }
 
@@ -161,27 +162,93 @@ a:hover {
 
 /* Modify after this with page changes */
 
-.about-me {
-  background-color: #3D3D3D;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.about-me h1, .about-me h3, .about-me p {
-  color: #333;
-}
-.about-me p {
-  line-height: 1.6;
-}
-.about-me em {
-  font-style: italic;
-  font-weight: bold;
+/* Grid backgrounds */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
 }
 
-.section-title {
+.grid-item {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid lightgray;
   text-align: center;
-  text-decoration: underline;
-  font-weight: bold;          
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grid-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(75%) blur(2.5px);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.project1 {
+  background-image: url('../assets/project/website.png');
+}
+.project2 {
+  background-image: url('../assets/project/interpreter.png');
+}
+.project3 {
+  background-image: url('../assets/project/maritime.png');
+}
+.project4 {
+  background-image: url('../assets/project/artifact.png');
+}
+
+.project-name,
+.description,
+.project-link {
+  position: relative;
+  z-index: 1;
+  background-color: #1a1a1ac3;
+  border-radius: 8px;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.project-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  border-radius: 8px;
+  font-size: 0.8em;
+  color: lightgrey;
+  display: inline-block;
+  padding: 5px 5px;
+  background-color: #7276ba;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+
+.project-link:hover {
+  color: lightgrey;
+  background-color: #8a8ee2;
+  transform: scale(1.05);
 }
 
 .text-highlight {
@@ -194,9 +261,9 @@ a:hover {
 }
 
 .typing-animation {
-  overflow: hidden; /* Ensures text is hidden until animation starts */
-  white-space: nowrap; /* Prevents text from wrapping */
-  animation: typing 2.3s steps(60, end); /* Adjust duration and steps as needed */
+  overflow: hidden; 
+  white-space: nowrap;
+  animation: typing 2.3s steps(60, end); 
 }
 
 /* width and height of the scrollbar */
@@ -207,16 +274,16 @@ a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFECCF; /* color of the track */
+  background: #FFECCF; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* color of the handle */
-  border-radius: 5px; /* roundness of the handle */
+  background: #888;
+  border-radius: 5px; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* color of the handle on hover */
+  background: #555; 
 }
